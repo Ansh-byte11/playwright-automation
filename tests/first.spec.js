@@ -14,7 +14,8 @@ test('Facebook Login Test', async ({ page }) => {
     // Click login button
     await page.click('button[name="login"]');
 
-    // Wait for homepage (example check)
+    // Wait for homepage (example check) kennf
+    await page.waitForLoadState('networkidle');
     await page.waitForLoadState('networkidle');
 
 });
