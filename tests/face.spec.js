@@ -4,7 +4,7 @@ const {test, expect} = require('@playwright/test');
 
 //Once we did import we need to create the test for intracting the thing we want to use in 
 
-test.skip('has title', async ({ page }) => {
+test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   await page.getByRole('link',{name:'Get started'}). click();
