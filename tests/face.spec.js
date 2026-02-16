@@ -3,17 +3,6 @@ const {test, expect} = require('@playwright/test');
 // Firstly we need to import the thing because we can use the method which is associated with the test and expect 
 
 //Once we did import we need to create the test for intracting the thing we want to use in 
-test.describe('navigation', () => {
-  test.beforeEach(async ({ page }) => {
-    // Go to the starting url before each test.
-    await page.goto('https://playwright.dev/');
-  });
-
-  test('main navigation', async ({ page }) => {
-    // Assertions use the expect API.
-    await expect(page).toHaveURL('https://playwright.dev/');
-  });
-});
 
 test.skip('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
